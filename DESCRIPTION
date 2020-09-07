@@ -1,4 +1,4 @@
-Package: SKELETON
+Package: hySpc.read.mat
 Type: Package
 Version: 0.0.0.9000
 Title: Package's Title
@@ -23,8 +23,8 @@ Suggests:
     knitr,
     covr
 URL: 
-    https://r-hyperspec.github.io/hySpc.skeleton,
-    https://github.com/r-hyperspec/hySpc.skeleton
-BugReports: https://github.com/r-hyperspec/hySpc.skeleton/issues
+    https://r-hyperspec.github.io/hySpc.read.mat,
+    https://github.com/r-hyperspec/hySpc.read.mat
+BugReports: https://github.com/r-hyperspec/hySpc.read.mat/issues
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1
