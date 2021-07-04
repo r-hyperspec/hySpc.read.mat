@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>hySpc.read.mat: Read .mat Files into hyperSpec — hySpc.read.mat-package • hySpc.read.mat</title>
+<title>Import for Cytospec `mat` files. — read_mat_Cytospec • hySpc.read.mat</title>
 
 
 <!-- jquery -->
@@ -41,8 +41,8 @@
   <link href="../extra.css" rel="stylesheet">
   
 
-<meta property="og:title" content="hySpc.read.mat: Read .mat Files into hyperSpec — hySpc.read.mat-package" />
-<meta property="og:description" content="Read .mat Files into hyperSpec." />
+<meta property="og:title" content="Import for Cytospec `mat` files. — read_mat_Cytospec" />
+<meta property="og:description" content="These functions allow to import `.mat` (Matlab V5) files written by Cytospec." />
 
 
 
@@ -116,36 +116,48 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>hySpc.read.mat: Read .mat Files into hyperSpec</h1>
-    <small class="dont-index">Source: <a href='https://github.com/r-hyperspec/hySpc.read.mat/blob/master/R/package.R'><code>R/package.R</code></a></small>
-    <div class="hidden name"><code>hySpc.read.mat-package.Rd</code></div>
+    <h1>Import for Cytospec `mat` files.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/r-hyperspec/hySpc.read.mat/blob/master/R/read_mat_Cytospec.R'><code>R/read_mat_Cytospec.R</code></a></small>
+    <div class="hidden name"><code>read.mat.Cytospec.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Read .mat Files into hyperSpec.</p>
+    <p>These functions allow to import `.mat` (Matlab V5) files written by Cytospec.</p>
     </div>
 
+    <pre class="usage"><span class='fu'>read_mat_Cytospec</span><span class='op'>(</span><span class='va'>file</span>, keys2data <span class='op'>=</span> <span class='cn'>FALSE</span>, blocks <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>file</th>
+      <td><p>The complete file name (or a connection to) the `.mat` file.</p></td>
+    </tr>
+    <tr>
+      <th>keys2data</th>
+      <td><p>specifies which elements of the `Info` should be
+transferred into the extra data</p></td>
+    </tr>
+    <tr>
+      <th>blocks</th>
+      <td><p>which blocks should be read? `TRUE` reads all blocks.</p></td>
+    </tr>
+    </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>`hyperSpec` object if the file contains a single spectra block,
+  otherwise a list with one `hyperSpec` object for each block.</p>
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+
+    <p>This function is an ad-hoc implementation and subject to changes.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p>Useful links:</p><ul>
-<li><p><a href='https://r-hyperspec.github.io/hySpc.read.mat'>https://r-hyperspec.github.io/hySpc.read.mat</a></p></li>
-<li><p><a href='https://github.com/r-hyperspec/hySpc.read.mat'>https://github.com/r-hyperspec/hySpc.read.mat</a></p></li>
-<li><p>Report bugs at <a href='https://github.com/r-hyperspec/hySpc.read.mat/issues'>https://github.com/r-hyperspec/hySpc.read.mat/issues</a></p></li>
-</ul>
-
-</div>
+    <div class='dont-index'><p>[R.matlab::readMat()]</p></div>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
-    <p><strong>Maintainer</strong>: Erick Oduniyi <a href='mailto:eeoduniyi@gmail.com'>eeoduniyi@gmail.com</a></p>
-<p>Authors:</p><ul>
-<li><p>Claudia Beleites <a href='mailto:Claudia.Beleites@chemometrix.gmbh'>Claudia.Beleites@chemometrix.gmbh</a></p></li>
-<li><p>Vilmantas Gegzna</p></li>
-<li><p>Bryan Hanson</p></li>
-</ul>
-
-
+    <p>C. Beleites</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
