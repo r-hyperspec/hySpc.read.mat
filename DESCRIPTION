@@ -11,14 +11,18 @@ Authors@R: c(
     )
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyLoad: yes
-LazyData: yes
 Additional_repositories: 
     https://r-hyperspec.github.io/pkg-repo/
 Depends:
     hyperSpec
 Imports: 
-    hySpc.testthat
+    hySpc.testthat,
+    methods,
+    R.matlab,
+    utils,
+    rmarkdown,
+    bookdown,
+    testthat
 Suggests:
     knitr,
     covr
@@ -28,3 +32,7 @@ URL:
 BugReports: https://github.com/r-hyperspec/hySpc.read.mat/issues
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1
+Collate: 
+    'package.R'
+    'read_mat_Cytospec.R'
+    'read_mat_Witec.R'
