@@ -64,7 +64,8 @@ show_reviewers_notes = getOption("show_reviewers_notes", TRUE)
 dir.create("resources", showWarnings = FALSE)
 knitr::write_bib(
   c("hyperSpec"),
-  file = "resources/intro-pkg.bib"
+  file = "resources/intro-pkg.bib",
+  prefix = "R_"
 )
 ```
 
@@ -86,4 +87,3 @@ read_mat_Cytospec(cyto)
 time_series_Witec <- system.file("extdata/mat.Witec", "time-series.mat", package = "hySpc.read.mat")
 read_mat_Witec(time_series_Witec)
 ```
-
