@@ -6,44 +6,63 @@ Repository **`hySpc.read.mat`** is a package template ("hySpc.read.mat") for **`
 
 When creating a new package (repository):
 
+<<<<<<< Updated upstream
 - [x] replace words `hySpc.read.mat` and `hySpc.read.mat` with the new package name in:
+=======
+- [ ] replace words `hySpc.read.mat` and `hySpc.read.mat` with the new package name in:
+>>>>>>> Stashed changes
   - [x] `DESCRIPTION`
   - [x] `NEWS.md`
   - [x] `README.md`
   - [x] `LICENSE`
+<<<<<<< Updated upstream
   - [ ] `tests/testthat.R`
   - [ ] `tests/testthat/test_attached.R`
   - [ ] other files
 - [x] update `DESCRIPTION`:
+=======
+  - [x] `tests/testthat.R`
+  - [x] `tests/testthat/test_attached.R`
+  - [x] other files
+- [ ] update `DESCRIPTION`:
+>>>>>>> Stashed changes
   - [x] title
   - [x] description
   - [x] the list of authors and contributors
   - [x] license
   - [x] other fields
+<<<<<<< Updated upstream
 - [x] update licensing information in
+=======
+- [ ] update licensing information in
+>>>>>>> Stashed changes
   - [x] `DESCRIPTION`
   - [x] `LICENSE`
   - [x] `README.md`
   - [x] elswhere
+<<<<<<< Updated upstream
 - [x] update `README`:
+=======
+- [ ] update `README`:
+>>>>>>> Stashed changes
   - [x] update badges
   - [x] update installation instructions (e.g., instead of `devtools::install(build_vignettes = TRUE)` the following code might be more appropriate if no vignettes are included `devtools::install()`)
   - [x] update other information, if needed.
 - [ ] create issue labels:
-  - [ ] apply github labels (in `github-helpers/`),
-  - [ ] delete `github-helpers/`
+  - [x] apply github labels (in `github-helpers/`),
+  - [x] delete `github-helpers/`
 - [ ] Code & Vignettes:
-  - [ ] Be sure to review `CONTRIBUTING.md` which describes the standard operating procedures for the `r-hyperspec` project.
-  - [ ] Copy the code needed for this new package from the original `hyperSpec` files. Leave the old code untouched for now, as `hyperSpec` has to continue to operate.
-  - [ ] Update the code and write new code as needed.
-  - [ ] Update unit tests as needed.
-  - [ ] Update examples as needed.
-  - [ ] Build and check locally. Chase out the demons.
-  - [ ] Create a new vignette for this package, starting from the relevant vignette in original `hyperSpec`.
-  - [ ] Build and check locally again, fixing any remaining problems.
-  - [ ] Create a pull request as described in `CONTRIBUTING.md`.
-  - [ ] Rinse and repeat to reach perfection!
-- [ ] _update this list of TODOs_
+  - [x] Be sure to review `CONTRIBUTING.md` which describes the standard operating procedures for the `r-hyperspec` project.
+  - [x] Copy the code needed for this new package from the original `hyperSpec` files. Leave the old code untouched for now, as `hyperSpec` has to continue to operate.
+  - [x] Update the code and write new code as needed.
+  - [x] Update unit tests as needed.
+  - [x] Update examples as needed.
+  - [x] Build and check locally. Chase out the demons.
+  - [x] Create a new vignette for this package, starting from the relevant vignette in original `hyperSpec`.
+  - [x] Build and check locally again, fixing any remaining problems.
+  - [x] Create a pull request as described in `CONTRIBUTING.md`.
+  - [x] Rinse and repeat to reach perfection!
+- [x] _update this list of TODOs_
 - [ ] Delete this TODO section.
 
 
