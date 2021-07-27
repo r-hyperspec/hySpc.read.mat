@@ -1,4 +1,4 @@
-#' Import for Cytospec `mat` files.
+#' Import for Cytospec `mat` files
 #'
 #' These functions allow to import `.mat` (Matlab V5) files written by Cytospec.
 #'
@@ -35,22 +35,22 @@ read_mat_Cytospec <- function(file, keys2data = FALSE, blocks = TRUE) {
   wn <- seq(lwn, hwn, length.out = dim(spc)[3])
 
   ## x + y coordinates
-  x <- rep(1:d [1], d [2])
-  y <- rep(1:d [2], each = d [1])
+  x <- rep(1:d[1], d[2])
+  y <- rep(1:d[2], each = d[1])
 
   extra.data <- data.frame(x = x, y = y)
 
-  nblocks <- d [4]
+  nblocks <- d[4]
   if (is.na(nblocks)) { # only one block => 3d array
     nblocks <- 1
     dim(spc) <- c(dim(spc), 1L)
   }
 
-  blocks <- seq(nblocks) [blocks]
+  blocks <- seq(nblocks)[blocks]
 
   if (any(is.na(blocks))) {
     warning("Dropping requests to unavailable blocks.")
-    blocks <- blocks [!is.na(blocks)]
+    blocks <- blocks[!is.na(blocks)]
   }
 
   if (length(blocks) == 1L) {
@@ -72,7 +72,7 @@ read_mat_Cytospec <- function(file, keys2data = FALSE, blocks = TRUE) {
   spc <- spc[, , , block]
 
   d <- dim(spc)
-  dim(spc) <- c(d [1] * d[2], d [3])
+  dim(spc) <- c(d[1] * d[2], d[3])
 
   df$block <- block
 
@@ -85,7 +85,7 @@ read_mat_Cytospec <- function(file, keys2data = FALSE, blocks = TRUE) {
 #' @import hySpc.testthat
 #' @import testthat
 #'
-hySpc.testthat::test(read_mat_Cytospec) <- function(){
+hySpc.testthat::test(read_mat_Cytospec) <- function() {
   cyto <- system.file("extdata/mat.cytospec", "cytospec.mat", package = "hySpc.read.mat")
 
   # unit tests for `read_mat_Cytospec` itself
@@ -102,6 +102,6 @@ hySpc.testthat::test(read_mat_Cytospec) <- function(){
     expect_equal(round(spc[[2]]$spc[[5, 100]], 2), 39.35)
 
     expect_equal(round(spc[[1]]@wavelength[872], 2), 2810.75)
-    expect_equal(round(spc[[2]]@wavelength[540],2), 1929.62)
+    expect_equal(round(spc[[2]]@wavelength[540], 2), 1929.62)
   })
 }

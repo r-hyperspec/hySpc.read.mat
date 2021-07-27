@@ -40,7 +40,7 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
 
 #' @import hySpc.testthat
 #' @import testthat
-hySpc.testthat::test(read_mat_Witec) <- function(){
+hySpc.testthat::test(read_mat_Witec) <- function() {
   time_series_Witec <- system.file("extdata/mat.Witec", "time-series.mat", package = "hySpc.read.mat")
 
   # unit tests for `read_mat_Witec` itself
@@ -53,5 +53,5 @@ hySpc.testthat::test(read_mat_Witec) <- function(){
 
     expect_equal(spc@wavelength[651], 651)
     expect_equal(spc@wavelength[379], 379)
-    })
+  })
 }
