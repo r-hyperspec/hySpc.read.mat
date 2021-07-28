@@ -28,11 +28,13 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
     )
   }
   spcname <- names(data)
+  #peel off outer layer of data structure, which only contains filename
   data <- data[[1]]
 
   spc <- new("hyperSpec", spc = data$data)
 
   spc$spcname <- spcname
+  spc@wavelength<-as.vector(data[["axisscale"]][[2]][[1]]) #get wavelengths
 
   ## consistent file import behaviour across import functions
   .spc_io_postprocess_optional(spc, file)
