@@ -23,8 +23,8 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
       "If it is nevertheless a WITec exported .mat file, ",
       "please open an issue at ",
       packageDescription("hySpc.read.mat")$BugReports,
-      " with\n",
-      "- output of `sessionInfo ()` and\n",
+      " with: \n",
+      "- output of `sessionInfo ()` and \n",
       "- an example file"
     )
   }
