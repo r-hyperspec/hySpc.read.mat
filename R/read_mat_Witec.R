@@ -1,16 +1,16 @@
-
-#' Read `.mat` file into `hyperSpec` object
+#' Import Matlab (`.mat`) file exported by Witec Project software
 #'
+#' Read `.mat` by Witec Project software file into `hyperSpec` object.
 #'
-#' @param file File name.
+#' @param file Path to file or connection from which to import
 #'
-# @concept io
-#' @concept moved to hySpc.read.txt
-#' @concept moved to hySpc.read.mat
+#' @importClassesFrom hyperSpec hyperSpec
+#' @importFrom methods new
+#' @importFrom utils packageDescription
+#' @import hyperSpec
 #'
-#' @importFrom utils maintainer
 #' @export
-
+#'
 read_mat_Witec <- function(file = stop("filename or connection needed")) {
   if (!requireNamespace("R.matlab")) {
     stop("package 'R.matlab' needed.")
@@ -21,14 +21,15 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
   if (length(data) > 1L) {
     stop(
       "Matlab file contains more than 1 object. This should not happen.\n",
-      "If it is nevertheless a WITec exported .mat file, please contact the ",
-      "maintainer (", maintainer("hyperSpec"), ") with\n",
+      "If it is nevertheless a WITec exported .mat file, ",
+      "please open an issue at ",
+      packageDescription("hySpc.read.mat")$BugReports,
+      " with\n",
       "- output of `sessionInfo ()` and\n",
       "- an example file"
     )
   }
   spcname <- names(data)
-  #peel off outer layer of data structure, which only contains filename
   data <- data[[1]]
   #WITec software can export Matlab files in two different formats
   #the first is the so called DSO format, the other they simply call the Matlab format
@@ -60,7 +61,10 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
 #' @import hySpc.testthat
 #' @import testthat
 hySpc.testthat::test(read_mat_Witec) <- function() {
-  time_series_Witec <- system.file("extdata/mat.Witec", "time-series.mat", package = "hySpc.read.mat")
+  time_series_Witec <- system.file(
+    "extdata/mat.Witec", "time-series.mat",
+    package = "hySpc.read.mat"
+  )
 
   # unit tests for `read_mat_Witec` itself
   ##################################
