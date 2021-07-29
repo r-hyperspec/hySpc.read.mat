@@ -1,5 +1,5 @@
 #' Import Matlab (`.mat`) file exported by Witec Project software
-#' 
+#'
 #' Read `.mat` by Witec Project software file into `hyperSpec` object.
 #'
 #' @param file Path to file or connection from which to import
@@ -35,14 +35,17 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
 
   spc$spcname <- spcname
 
-  ## consistent file import behaviour across import functions
+  ## consistent file import behavior across import functions
   .spc_io_postprocess_optional(spc, file)
 }
 
 #' @import hySpc.testthat
 #' @import testthat
 hySpc.testthat::test(read_mat_Witec) <- function() {
-  time_series_Witec <- system.file("extdata/mat.Witec", "time-series.mat", package = "hySpc.read.mat")
+  time_series_Witec <- system.file(
+    "extdata/mat.Witec", "time-series.mat",
+    package = "hySpc.read.mat"
+  )
 
   # unit tests for `read_mat_Witec` itself
   ##################################
