@@ -9,6 +9,9 @@ Erick, Sang, and the team carried out a significant overhaul of `hyperSpec` whic
 ## User-visible Changes
 
 ### Bug Fixes
+
+* Wavelengths are now read correctly from WITec `.mat` files (@GregoryHuff, #8).
+
 ### Breaking Changes
 ### New Functions
 
