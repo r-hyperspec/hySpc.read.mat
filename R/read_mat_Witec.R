@@ -70,7 +70,7 @@ hySpc.testthat::test(read_mat_Witec) <- function() {
     expect_equal(spc$spc[[6, 231]], 1095)
     expect_equal(spc$spc[[4, 457]], 995)
 
-    expect_equal(spc@wavelength[651], 651)
-    expect_equal(spc@wavelength[379], 379)
+    expect_equal(spc@wavelength[651], 722.128810655841)
+    expect_equal(spc@wavelength[379], 686.472415800377)
   })
 }
