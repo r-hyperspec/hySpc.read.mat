@@ -20,6 +20,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -39,12 +41,6 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../articles/hySpc-read-mat.html">Get started</a>
 </li>
 <li>
@@ -56,7 +52,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/r-hyperspec/hySpc.read.mat/">
+  <a href="https://github.com/r-hyperspec/hySpc.read.mat/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -71,19 +67,19 @@
 
       
 
-      </header><script src="hySpc-read-mat_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Import and Export Files with MAT files</h1>
-            <h3 class="subtitle">Tutorial on Spectra File Import from MAT Files for “hyperSpec”</h3>
-                        <h4 class="author">Sang Truong, Claudia Beleites, Vilmantas Gegzna, Roman Kiselev</h4>
+            <h3 data-toc-skip class="subtitle">Tutorial on Spectra File Import from MAT Files for “hyperSpec”</h3>
+                        <h4 data-toc-skip class="author">Sang Truong, Claudia Beleites, Vilmantas Gegzna, Roman Kiselev</h4>
             <address class="author_afil">
       Stanford University<br><a class="author_email" href="mailto:#"></a><a href="mailto:sttruong@stanford.edu" class="email">sttruong@stanford.edu</a>
       </address>
                   
-            <h4 class="date">2021-12-01</h4>
+            <h4 data-toc-skip class="date">2021-12-14</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/r-hyperspec/hySpc.read.mat/blob/master/vignettes/hySpc-read-mat.Rmd"><code>vignettes/hySpc-read-mat.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/r-hyperspec/hySpc.read.mat/blob/HEAD/vignettes/hySpc-read-mat.Rmd" class="external-link"><code>vignettes/hySpc-read-mat.Rmd</code></a></small>
       <div class="hidden name"><code>hySpc-read-mat.Rmd</code></div>
 
     </div>
@@ -106,22 +102,22 @@ You can access the vignettes via these links:
 </p>
 <ul>
 <li>
-<a href="http://cbeleites.github.io/hyperSpec/articles/hyperSpec.html">Introduction to <strong>hyperSpec</strong></a>
+<a href="http://cbeleites.github.io/hyperSpec/articles/hyperSpec.html" class="external-link">Introduction to <strong>hyperSpec</strong></a>
 </li>
 <li>
-<a href="http://cbeleites.github.io/hyperSpec/articles/plotting.html">Plotting Functions in <strong>hyperSpec</strong></a>
+<a href="http://cbeleites.github.io/hyperSpec/articles/plotting.html" class="external-link">Plotting Functions in <strong>hyperSpec</strong></a>
 </li>
 <li>
-<a href="http://cbeleites.github.io/hyperSpec/articles/baseline.html">Fitting Baselines to Spectra</a>
+<a href="http://cbeleites.github.io/hyperSpec/articles/baseline.html" class="external-link">Fitting Baselines to Spectra</a>
 </li>
 <li>
-<a href="http://cbeleites.github.io/hyperSpec/articles/fileio.html">Importing Files into <strong>hyperSpec</strong></a>
+<a href="http://cbeleites.github.io/hyperSpec/articles/fileio.html" class="external-link">Importing Files into <strong>hyperSpec</strong></a>
 </li>
 <li>
-<a href="http://cbeleites.github.io/hyperSpec/articles/flu.html">flu: Example Workflow for Fluorescene Emission</a>
+<a href="http://cbeleites.github.io/hyperSpec/articles/flu.html" class="external-link">flu: Example Workflow for Fluorescene Emission</a>
 </li>
 <li>
-<a href="http://cbeleites.github.io/hyperSpec/articles/laser.html">laser: Example Workflow for Spectral Time Series</a>
+<a href="http://cbeleites.github.io/hyperSpec/articles/laser.html" class="external-link">laser: Example Workflow for Spectral Time Series</a>
 </li>
 </ul>
 </li>
@@ -136,13 +132,13 @@ Vignettes in other packages:
 </p>
 <ul>
 <li>
-<a href="https://r-hyperspec.github.io/hySpc.chondro/articles/hySpc-chondro.html">Example Workflow for 2D Raman Spectra</a> (<code>chondro</code> dataset)
+<a href="https://r-hyperspec.github.io/hySpc.chondro/articles/hySpc-chondro.html" class="external-link">Example Workflow for 2D Raman Spectra</a> (<code>chondro</code> dataset)
 </li>
 <li>
-<a href="https://r-hyperspec.github.io/hySpc.ggplot2/articles/hySpc-ggplot2.html">Plotting <code>hyperSpec</code> objects with <strong>ggplot2</strong></a>
+<a href="https://r-hyperspec.github.io/hySpc.ggplot2/articles/hySpc-ggplot2.html" class="external-link">Plotting <code>hyperSpec</code> objects with <strong>ggplot2</strong></a>
 </li>
 <li>
-<a href="https://r-hyperspec.github.io/hySpc.dplyr/articles/hySpc-dplyr.html">Using <strong>dplyr</strong> functions with <code>hyperSpec</code> objects</a>
+<a href="https://r-hyperspec.github.io/hySpc.dplyr/articles/hySpc-dplyr.html" class="external-link">Using <strong>dplyr</strong> functions with <code>hyperSpec</code> objects</a>
 </li>
 </ul>
 </li>
@@ -150,11 +146,11 @@ Vignettes in other packages:
 </div>
 <!-- ======================================================================= -->
 <!-- This chunk demonstrates read_mat_Cytospec() and read_mat_Witec() -->
-<pre><code>cyto &lt;- system.file("extdata/mat.cytospec", "cytospec.mat", package = "hySpc.read.mat")
-read_mat_Cytospec(cyto)
+<pre><code><span class="va">cyto</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/mat.cytospec"</span>, <span class="st">"cytospec.mat"</span>, package <span class="op">=</span> <span class="st">"hySpc.read.mat"</span><span class="op">)</span>
+<span class="fu"><a href="../reference/read.mat.Cytospec.html">read_mat_Cytospec</a></span><span class="op">(</span><span class="va">cyto</span><span class="op">)</span>
 
-time_series_Witec &lt;- system.file("extdata/mat.Witec", "time-series.mat", package = "hySpc.read.mat")
-read_mat_Witec(time_series_Witec)</code></pre>
+<span class="va">time_series_Witec</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata/mat.Witec"</span>, <span class="st">"time-series.mat"</span>, package <span class="op">=</span> <span class="st">"hySpc.read.mat"</span><span class="op">)</span>
+<span class="fu"><a href="../reference/read_mat_Witec.html">read_mat_Witec</a></span><span class="op">(</span><span class="va">time_series_Witec</span><span class="op">)</span></code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -166,11 +162,13 @@ read_mat_Witec(time_series_Witec)</code></pre>
 
 
       <footer><div class="copyright">
-  <p>Developed by Claudia Beleites, Erick Oduniyi, <a href="https://orcid.org/0000-0002-9500-5167">Vilmantas Gegzna</a>, <a href="http://academic.depauw.edu/hanson_web/">Bryan A. Hanson</a>, Sang Truong.</p>
+  <p></p>
+<p>Developed by Claudia Beleites, Erick Oduniyi, <a href="https://orcid.org/0000-0002-9500-5167" class="external-link">Vilmantas Gegzna</a>, <a href="http://academic.depauw.edu/hanson_web/" class="external-link">Bryan A. Hanson</a>, Sang Truong.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -178,6 +176,8 @@ read_mat_Witec(time_series_Witec)</code></pre>
 
   
 
+
+  
 
   </body>
 </html>
