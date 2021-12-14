@@ -7,15 +7,12 @@
 #' @importClassesFrom hyperSpec hyperSpec
 #' @importFrom methods new
 #' @importFrom utils packageDescription
+#' @importFrom R.matlab readMat
 #' @import hyperSpec
 #'
 #' @export
 read_mat_Witec <- function(file = stop("filename or connection needed")) {
-  if (!requireNamespace("R.matlab")) {
-    stop("package 'R.matlab' needed.")
-  }
-
-  data <- R.matlab::readMat(file)
+  data <- readMat(file)
 
   if (length(data) > 1L) {
     stop(

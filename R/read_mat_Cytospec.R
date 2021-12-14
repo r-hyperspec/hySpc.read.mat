@@ -18,11 +18,7 @@
 #' @concept io
 #'
 read_mat_Cytospec <- function(file, keys2data = FALSE, blocks = TRUE) {
-  if (!requireNamespace("R.matlab")) {
-    stop("package 'R.matlab' needed.")
-  }
-
-  tmp <- R.matlab::readMat(file)
+  tmp <- readMat(file)
 
   ## read spectra matrix
   spc <- tmp$C
