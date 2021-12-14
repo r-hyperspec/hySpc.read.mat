@@ -7,7 +7,7 @@ Authors@R: c(
     person("Claudia",   "Beleites",  role = c("aut"), email = "Claudia.Beleites@chemometrix.gmbh"),
     person("Erick",     "Oduniyi", role = c("aut","cre"), email = "eeoduniyi@gmail.com"),
     person("Vilmantas", "Gegzna", role = c("aut")),
-    person("Bryan",     "Hanson", role = c("aut")),
+    person("Bryan A.",     "Hanson", role = c("aut")),
     person("Sang", "Truong", role = c("aut"))
     )
 License: MIT + file LICENSE
@@ -32,7 +32,7 @@ URL:
     https://github.com/r-hyperspec/hySpc.read.mat
 BugReports: https://github.com/r-hyperspec/hySpc.read.mat/issues
 VignetteBuilder: knitr
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Collate: 
     'package.R'
     'read_mat_Cytospec.R'
