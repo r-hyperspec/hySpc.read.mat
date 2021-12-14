@@ -35,9 +35,9 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
   # for example) when using the non-DSO format.
 
   # Check whether it is DSO or not
-  DSOversion <- data[["datasetversion"]] # this will be NULL for non-DSO files
+  dso_version <- data[["datasetversion"]] # this will be NULL for non-DSO files
 
-  if (!is.null(DSOversion)) {
+  if (!is.null(dso_version)) {
     spc <- new("hyperSpec", spc = data$data)
     spc$spcname <- spcname
     spc@wavelength <- as.vector(data[["axisscale"]][[2]][[1]]) # get wavelengths
@@ -46,7 +46,7 @@ read_mat_Witec <- function(file = stop("filename or connection needed")) {
     # non-DSO file
     # data is found in [[3]]
     spc <- new("hyperSpec", spc = data[[3]])
-    # axisscale is [[4]]
+    # `axisscale` is [[4]]
     spc@wavelength <- as.vector(data[[4]][[2]][[1]]) # get wavelengths
     spc@label$.wavelength <- data[[4]][[4]][[1]][[1]] # get units for x-axis
   }
