@@ -84,9 +84,9 @@
 <li>Package names in section headings are in <strong><em>bold italic</em></strong>.</li>
 <li>In section headings main words should be capitalized.</li>
 <li>Use the British English variant and corresponding spell checker.</li>
-<li>Function names should be written between backticks with the parentheses and followed by a signal to use syntax formatting (not simply for example <code>texttt</code> or <code>code</code> if one was using pure LaTeX), for example <code class="sourceCode r"><span class="kw">fun</span>()</code>. The CSS file controls the exact appearance.</li>
-<li>When parts of the <code>hySpc.read.mat</code> objects are mentioned, use the syntax formatting, for instance <code class="sourceCode r"><span class="op">@</span>data</code>.</li>
-<li>When parts of a structure such as a column or list element, use the syntax highlighting, e.g. <code class="sourceCode r"><span class="op">$</span>something</code>.</li>
+<li>Function names should be written between backticks with the parentheses and followed by a signal to use syntax formatting (not simply for example <code>texttt</code> or <code>code</code> if one was using pure LaTeX), for example <code class="sourceCode r"><span class="fu">fun</span>()</code>. The CSS file controls the exact appearance.</li>
+<li>When parts of the <code>hySpc.read.mat</code> objects are mentioned, use the syntax formatting, for instance <code class="sourceCode r"><span class="sc">@</span>data</code>.</li>
+<li>When parts of a structure such as a column or list element, use the syntax highlighting, e.g. <code class="sourceCode r"><span class="sc">$</span>something</code>.</li>
 <li>Figures should have captions.</li>
 <li>Every figure should be mentioned in text via reference. This will give automatic numbering.</li>
 <li>Figure and Table should be capitalized when mentioned in text, e.g. Figure 1.</li>
@@ -126,9 +126,7 @@
 <div class="section level3">
 <h3 id="pull-requests">Pull Requests<a class="anchor" aria-label="anchor" href="#pull-requests"></a></h3>
 <p>Open a pull request via GitHub interface to let others see your work and review it. It is a collaborative tool, so we encourage you to open a <a href="https://github.blog/2019-02-14-introducing-draft-pull-requests/" class="external-link">‘draft pull request’</a> as soon as you start working on your part. This provides a place for the community to discuss your work and correct it as you go. Once your part is completed, change the status to “Ready for review”.</p>
-<blockquote>
-<p>The project maintainer may want to merge your pull request when your work is usable, even before it is 100% complete. In such a case, the branch must be deleted and a new one created off the <code>develop</code> branch. You can use the same name for it to indicate that this is a continuation. It will be merged, as usual, via a new pull request. This may seem to be an overhead at first glance, but it leads to a faster integration and makes the the pull requests smaller and less overwhelming.</p>
-</blockquote>
+<blockquote><p>The project maintainer may want to merge your pull request when your work is usable, even before it is 100% complete. In such a case, the branch must be deleted and a new one created off the <code>develop</code> branch. You can use the same name for it to indicate that this is a continuation. It will be merged, as usual, via a new pull request. This may seem to be an overhead at first glance, but it leads to a faster integration and makes the the pull requests smaller and less overwhelming.</p></blockquote>
 <p>The merged support branches <a href="https://ardalis.com/why-delete-old-git-branches" class="external-link">should be deleted - they’re clutter</a>. If you want to keep their name for reference, just apply a <code>git tag</code> after the merge. Never reuse merged branches, <a href="https://stackoverflow.com/a/29319178" class="external-link">it can lead to problems</a>.</p>
 </div>
 <div class="section level3">
@@ -185,7 +183,7 @@ This is important since <strong>pkgdown</strong> uses the <code>.9000</code> to 
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
